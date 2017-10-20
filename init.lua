@@ -120,7 +120,7 @@ function cycle(amount, orientation)
 
 end
 
-# mashing control, alt/option, command and the numbers 2 or 3 or 4 or 5 resizes windows
+-- mashing control, alt/option, command and the numbers 2 or 3 or 4 or 5 resizes windows
 hs.hotkey.bind(cah, "3", cycle(2, 'horizontal'))
 hs.hotkey.bind(cah, "2", cycle(3, 'horizontal'))
 
