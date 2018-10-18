@@ -12,6 +12,10 @@ function reloadConfig(files)
 end
 hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
 
+hs.window.animationDuration=0
+
+
+
 --
 -- Key defs
 --
@@ -90,7 +94,8 @@ function cycle(amount, orientation)
 				offsetX = 0
 			end
 
-		  	hs.notify.new({title="Horizontal " .. amount, informativeText= offsetX .. " by " .. width}):send()
+		  	-- hs.notify.new({title="Horizontal " .. amount, informativeText= offsetX .. " by " .. width}):send()
+		  	-- hs.alert.show("Horizontal move by " .. amount  .. ", " .. offsetX .. " + " .. width)
 
 			gridset(offsetX, offsetY, width, height)()
 		end
@@ -109,7 +114,8 @@ function cycle(amount, orientation)
 				offsetY = 0
 			end
 
-		  	hs.notify.new({title="Vertical " .. amount, informativeText= offsetY .. " by " .. height}):send()
+		  	-- hs.notify.new({title="Vertical " .. amount, informativeText= offsetY .. " by " .. height}):send()
+		  	-- hs.alert.show("Vertical move by " .. amount  .. ", " .. offsetY .. " + " .. height)
 
 			gridset(offsetX, offsetY, width, height)()
 		end
