@@ -133,6 +133,8 @@ hs.hotkey.bind(cah, "2", cycle(3, 'horizontal'))
 hs.hotkey.bind(cah, "4", cycle(2, 'vertical'))
 hs.hotkey.bind(cah, "5", cycle(3, 'vertical'))
 
+hs.alert.show("Hammerspoon loaded")
+
 
 
 -- someone else's grid system for reference
@@ -188,4 +190,8 @@ hs.hotkey.bind(cah, "5", cycle(3, 'vertical'))
 --end)
 
 
-hs.alert.show("Hammerspoon loaded")
+
+-- logging sample
+
+-- logger = hs.logger.new('log', 'verbose')
+-- logger.i('logging to hammerspoon console')
